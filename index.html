@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preguntas frecuentes — Acceso a la información pública</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #2f2f2f;
+    background: transparent;
+    padding: 0;
+  }
+
+  .faq-titulo {
+    font-weight: bold;
+    color: #b71234;
+    font-size: 16px;
+    margin-bottom: 18px;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #e9ecef;
+  }
+
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2f2f2f;
+    gap: 12px;
+    line-height: 1.4;
+  }
+
+  .faq-btn:hover { color: #b71234; }
+
+  .faq-btn:focus {
+    outline: 2px solid #b71234;
+    outline-offset: 2px;
+  }
+
+  .faq-etiqueta {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-right: 6px;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+
+  .faq-etiqueta.procedimiento { background: #e8f0fb; color: #2b579a; }
+  .faq-etiqueta.limites       { background: #f8d7da; color: #721c24; }
+  .faq-etiqueta.costes        { background: #d4edda; color: #155724; }
+  .faq-etiqueta.formato       { background: #e2e3e5; color: #383d41; }
+  .faq-etiqueta.plazos        { background: #fff3cd; color: #856404; }
+
+  .faq-icono {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #b71234;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-respuesta {
+    display: none;
+    padding: 4px 0 18px 0;
+    font-size: 14px;
+    color: #2f2f2f;
+    line-height: 1.7;
+  }
+
+  .faq-respuesta a {
+    color: #b71234;
+    text-decoration: none;
+  }
+
+  .faq-respuesta a:hover {
+    text-decoration: underline;
+  }
+
+  .faq-btn[aria-expanded="true"] .faq-icono {
+    transform: rotate(180deg);
+  }
+
+  .faq-btn[aria-expanded="true"] {
+    color: #b71234;
+  }
+</style>
+</head>
+<body>
+
+<div role="region" aria-label="Preguntas frecuentes sobre acceso a la información pública">
+
+  <p class="faq-titulo">Preguntas frecuentes</p>
+
+  <!-- P1 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq1" id="faq1-btn">
+      <span><span class="faq-etiqueta procedimiento">Procedimiento</span>¿Quién puede solicitar información pública?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq1" role="region" aria-labelledby="faq1-btn">
+      Cualquier persona física o jurídica, con independencia de su nacionalidad, puede ejercer este derecho sin necesidad de acreditar un interés legítimo ni justificar los motivos de su solicitud. No obstante, el solicitante puede exponer voluntariamente sus razones, que podrán ser tenidas en cuenta en la resolución.
+    </div>
+  </div>
+
+  <!-- P2 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq2" id="faq2-btn">
+      <span><span class="faq-etiqueta procedimiento">Procedimiento</span>¿Qué se considera información pública?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq2" role="region" aria-labelledby="faq2-btn">
+      Se entiende por información pública los contenidos o documentos, cualquiera que sea su formato o soporte, que obren en poder de la UCM y que hayan sido elaborados o adquiridos en el ejercicio de sus funciones. Quedan incluidos documentos en papel, archivos electrónicos, bases de datos, correos electrónicos institucionales y cualquier otro registro de actividad de la Universidad.
+    </div>
+  </div>
+
+  <!-- P3 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq3" id="faq3-btn">
+      <span><span class="faq-etiqueta procedimiento">Procedimiento</span>¿Tengo que motivar mi solicitud?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq3" role="region" aria-labelledby="faq3-btn">
+      No es obligatorio. La solicitud de acceso a la información pública no tiene que estar motivada. Sin embargo, si lo desea, puede exponer las razones que justifican su petición; estas razones podrán tenerse en cuenta al ponderar el interés público en la divulgación frente a los posibles límites aplicables.
+    </div>
+  </div>
+
+  <!-- P4 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq4" id="faq4-btn">
+      <span><span class="faq-etiqueta limites">Límites</span>¿En qué casos puede denegarse o limitarse el acceso?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq4" role="region" aria-labelledby="faq4-btn">
+      El acceso puede denegarse o limitarse cuando la información afecte a alguno de los límites previstos en la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12887" target="_blank" rel="noopener">Ley 19/2013</a>, entre ellos: la seguridad nacional, la defensa, las relaciones exteriores, la seguridad pública, la prevención e investigación de infracciones, la igualdad de partes en procesos judiciales, la propiedad intelectual e industrial, la protección del medio ambiente o la privacidad y protección de datos personales. Cuando la información solo afecte parcialmente a alguno de estos límites, se concederá acceso a la parte no afectada.
+    </div>
+  </div>
+
+  <!-- P5 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq5" id="faq5-btn">
+      <span><span class="faq-etiqueta limites">Límites</span>¿Cuándo puede inadmitirse una solicitud?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq5" role="region" aria-labelledby="faq5-btn">
+      Una solicitud puede ser inadmitida cuando: la información esté en curso de elaboración o vaya a publicarse próximamente en el Portal de Transparencia; sea de carácter auxiliar o de apoyo interno (notas, borradores, opiniones); la UCM no sea competente en la materia solicitada; o la petición sea manifiestamente repetitiva o tenga un carácter abusivo no justificado. La resolución de inadmisión deberá comunicarse en el plazo de cinco días.
+    </div>
+  </div>
+
+  <!-- P6 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq6" id="faq6-btn">
+      <span><span class="faq-etiqueta costes">Costes</span>¿Tiene coste solicitar información?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq6" role="region" aria-labelledby="faq6-btn">
+      La solicitud y el acceso a la información son gratuitos con carácter general. Únicamente puede aplicarse una tasa cuando se solicite la expedición de copias o la trasposición a formatos diferentes al original, que corresponderá al coste real de reproducción. Para evitar cualquier coste, se recomienda solicitar el acceso en formato electrónico, que es siempre gratuito.
+    </div>
+  </div>
+
+  <!-- P7 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq7" id="faq7-btn">
+      <span><span class="faq-etiqueta formato">Formato</span>¿Puedo pedir la información en un formato concreto?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq7" role="region" aria-labelledby="faq7-btn">
+      Sí. Puede indicar el formato o soporte en el que prefiere recibir la información (PDF, hoja de cálculo, datos abiertos, etc.). La UCM facilitará la información en el formato solicitado siempre que sea técnicamente posible. Si la información ya existe en un formato diferente, se le comunicará la forma en que puede acceder a ella. Recibir la información en formato electrónico es siempre gratuito.
+    </div>
+  </div>
+
+  <!-- P8 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq8" id="faq8-btn">
+      <span><span class="faq-etiqueta plazos">Plazos</span>¿Qué ocurre si no recibo respuesta en el plazo establecido?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq8" role="region" aria-labelledby="faq8-btn">
+      Transcurridos los veinte días hábiles sin resolución expresa, la solicitud se entenderá desestimada por silencio administrativo. En ese caso, puede interponer una reclamación potestativa ante el <a href="https://www.comunidad.madrid/consejo-transparencia" target="_blank" rel="noopener">Consejo de Transparencia y Protección de Datos de la Comunidad de Madrid</a> en el plazo de un mes, o acudir directamente a la jurisdicción contencioso-administrativa.
+    </div>
+  </div>
+
+  <!-- P9 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq9" id="faq9-btn">
+      <span><span class="faq-etiqueta procedimiento">Procedimiento</span>¿Qué pasa si la información ya está publicada en el portal?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq9" role="region" aria-labelledby="faq9-btn">
+      Si la información solicitada ya está publicada en el <a href="https://www.ucm.es/portaldetransparencia" target="_blank" rel="noopener">Portal de Transparencia de la UCM</a>, la resolución podrá limitarse a indicar al solicitante cómo y dónde puede acceder a ella. Por ello, antes de presentar una solicitud, se recomienda consultar primero el portal, donde se publica de forma proactiva la información de mayor relevancia.
+    </div>
+  </div>
+
+  <!-- P10 -->
+  <div class="faq-item">
+    <button class="faq-btn" aria-expanded="false" aria-controls="faq10" id="faq10-btn">
+      <span><span class="faq-etiqueta limites">Límites</span>¿Se protegen mis datos personales al presentar una solicitud?</span>
+      <span class="faq-icono" aria-hidden="true">▼</span>
+    </button>
+    <div class="faq-respuesta" id="faq10" role="region" aria-labelledby="faq10-btn">
+      Sí. Los datos personales facilitados en la solicitud serán tratados por la UCM (Secretaría General) únicamente para tramitar su petición y con fines estadísticos, al amparo de la obligación legal en materia de transparencia. No serán cedidos salvo en los casos previstos por la ley. Puede ejercer sus derechos de acceso, rectificación, supresión y demás previstos en la normativa de protección de datos dirigiendo un escrito a la <a href="https://www.ucm.es/secretaria-general" target="_blank" rel="noopener">Secretaría General</a> o a la Delegada de Protección de Datos de la UCM.
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.querySelectorAll('.faq-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      var respuesta = document.getElementById(this.getAttribute('aria-controls'));
+
+      // Cerrar todos los demás
+      document.querySelectorAll('.faq-btn').forEach(function(b) {
+        b.setAttribute('aria-expanded', 'false');
+        document.getElementById(b.getAttribute('aria-controls')).style.display = 'none';
+      });
+
+      // Abrir o cerrar el actual
+      if (!expanded) {
+        this.setAttribute('aria-expanded', 'true');
+        respuesta.style.display = 'block';
+      }
+    });
+  });
+
+  // Comunicar altura al padre para ajustar el iframe dinámicamente
+  function enviarAltura() {
+    var altura = document.body.scrollHeight;
+    window.parent.postMessage({ iframeAltura: altura }, '*');
+  }
+
+  var observer = new MutationObserver(enviarAltura);
+  observer.observe(document.body, { childList: true, subtree: true, attributes: true });
+  enviarAltura();
+</script>
+
+</body>
+</html>
